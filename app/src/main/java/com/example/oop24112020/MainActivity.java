@@ -31,8 +31,13 @@ public class MainActivity extends AppCompatActivity {
         // private : ai tạo thì người đó thấy
         // default : giống private nhưng các class trong package có thể thấy
 
-        Rectangle rectangle = new Rectangle(4.5 , 5.5);
-        rectangle.getInformation();
+//        Rectangle rectangle = new Rectangle(4.5 , 5.5);
+//        rectangle.getInformation();
+
+        // 1 : Tính kế thừa
+
+        Dog dog = new Dog("kiki",5);
+        Log.d("BBB",dog.getName());
 
     }
 }
