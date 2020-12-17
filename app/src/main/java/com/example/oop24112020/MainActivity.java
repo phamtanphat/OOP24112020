@@ -4,10 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-
-import com.example.oop24112020.androidB.Animal;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,15 +21,18 @@ public class MainActivity extends AppCompatActivity {
 
 //        Object va class
 //        Access modifier : Phạm vi truy cập
-        Animal dog = new Animal("kiki",5);
-
-        dog.setName("milu");
-
-        Log.d("BBB",dog.getName());
+//        Animal dog = new Animal("kiki",5);
+//
+//        dog.setName("milu");
+//
+//        Log.d("BBB",dog.getName());
 
         // public : ai cũng thấy
         // private : ai tạo thì người đó thấy
         // default : giống private nhưng các class trong package có thể thấy
+
+        Rectangle rectangle = new Rectangle(4.5 , 5.5);
+        rectangle.getInformation();
 
     }
 }
