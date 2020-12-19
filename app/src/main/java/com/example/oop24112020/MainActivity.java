@@ -9,6 +9,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     final int a = 5;
+    final int[] mangB = {1,2,3,4,5,6,7,8,9,10};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Tính chất
         // Tính kế thừa
-            // Quan hệ has A
+        // Quan hệ has A
         // Tính đa hình
         // Tính trừu tượng
         // Tinh đóng gói
@@ -44,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
         // Non access modifier : thay đổi tính chất của biến , đối tượng , phương thức
         // final : Thay đổi biến thành hằng số và không được gán lại
         // static : Giá trị hiển nhiên không phải khởi tạo ra object để gọi được giá trị này
-
         // Override : ghi đè
 //        1 : Phương thức ghi đè nằm 2 nơi khác , không cùng 1 class
 //        2 : Chỉ thay đổi thân hàm
@@ -56,5 +56,6 @@ public class MainActivity extends AppCompatActivity {
 
         Dog dog = new Dog("kiki" , 5);
         Log.d("BBB",dog.getName());
+
     }
 }

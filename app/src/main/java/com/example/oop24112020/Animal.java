@@ -33,4 +33,17 @@ public class Animal {
     public void setWeight(Integer weight) {
         this.weight = weight;
     }
+
+    // Display : in ra thông tin
+    // Nếu truyền String name  : in ra tên
+    // Nếu truyền String name , Integer weight : in ra cả hai
+    // Nếu không truyền : như bên dưới
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", weight=" + weight +
+                '}';
+    }
 }
