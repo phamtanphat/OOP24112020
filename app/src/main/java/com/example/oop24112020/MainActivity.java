@@ -46,19 +46,15 @@ public class MainActivity extends AppCompatActivity {
         // static : Giá trị hiển nhiên không phải khởi tạo ra object để gọi được giá trị này
 
         // Override : ghi đè
+//        1 : Phương thức ghi đè nằm 2 nơi khác , không cùng 1 class
+//        2 : Chỉ thay đổi thân hàm
+//        3 : Đặc điểm nhận biết có anotation @Override
         // Overload : nạp chồng
-//            1 : Tên phương thức giống nhau
-//            2 : Giá trị truyền vào khác nhau
-//            3 : Phạm vi cùng 1 class
-        showToast(true);
-    }
-    public void showToast(String message){
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
-    }
-    public void showToast(Integer resId){
-        Toast.makeText(this, resId + "", Toast.LENGTH_SHORT).show();
-    }
-    public void showToast(Boolean aBoolean){
-        Toast.makeText(this, aBoolean + "", Toast.LENGTH_SHORT).show();
+//        1 : Tên phương thức giống nhau
+//        2 : Giá trị truyền vào khác nhau
+//        3 : Phạm vi cùng 1 class
+
+        Dog dog = new Dog("kiki" , 5);
+        Log.d("BBB",dog.getName());
     }
 }
