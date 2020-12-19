@@ -1,7 +1,5 @@
 package com.example.oop24112020;
 
-import android.util.Log;
-
 public class Animal {
     // 1 : Thuộc tính
     private String name;
@@ -34,16 +32,4 @@ public class Animal {
         this.weight = weight;
     }
 
-    // Display : in ra thông tin
-    // Nếu truyền String name  : in ra tên
-    // Nếu truyền String name , Integer weight : in ra cả hai
-    // Nếu không truyền : như bên dưới
-
-    @Override
-    public String toString() {
-        return "Animal{" +
-                "name='" + name + '\'' +
-                ", weight=" + weight +
-                '}';
-    }
 }

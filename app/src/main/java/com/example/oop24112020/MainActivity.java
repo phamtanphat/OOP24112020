@@ -6,56 +6,25 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity{
 
-    final int a = 5;
-    final int[] mangB = {1,2,3,4,5,6,7,8,9,10};
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    int getLayout() {
+        return R.layout.activity_main;
+    }
 
-        // Tính chất
-        // Tính kế thừa
-        // Quan hệ has A
-        // Tính đa hình
-        // Tính trừu tượng
-        // Tinh đóng gói
+    @Override
+    void showToast() {
 
-//        Object va class
-//        Access modifier : Phạm vi truy cập
-//        Animal dog = new Animal("kiki",5);
-//
-//        dog.setName("milu");
-//
-//        Log.d("BBB",dog.getName());
+    }
 
-        // public : ai cũng thấy
-        // private : ai tạo thì người đó thấy
-        // default : giống private nhưng các class trong package có thể thấy
+    @Override
+    void showError() {
 
-//        Rectangle rectangle = new Rectangle(4.5 , 5.5);
-//        rectangle.getInformation();
+    }
 
-//        1 : Tính kế thừa
-//        Non access modifier : static , final
-//        Dog dog = new Dog("kiki",5);
-//        Log.d("BBB",dog.getName());
-
-        // Non access modifier : thay đổi tính chất của biến , đối tượng , phương thức
-        // final : Thay đổi biến thành hằng số và không được gán lại
-        // static : Giá trị hiển nhiên không phải khởi tạo ra object để gọi được giá trị này
-        // Override : ghi đè
-//        1 : Phương thức ghi đè nằm 2 nơi khác , không cùng 1 class
-//        2 : Chỉ thay đổi thân hàm
-//        3 : Đặc điểm nhận biết có anotation @Override
-        // Overload : nạp chồng
-//        1 : Tên phương thức giống nhau
-//        2 : Giá trị truyền vào khác nhau
-//        3 : Phạm vi cùng 1 class
-
-        Dog dog = new Dog("kiki" , 5);
-        Log.d("BBB",dog.getName());
+    @Override
+    void loading() {
 
     }
 }
